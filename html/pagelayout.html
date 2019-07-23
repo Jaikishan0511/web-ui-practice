@@ -1,107 +1,97 @@
 <html>
-<head>
+  <head>
     <style>
-       body {
-  margin: 0;
-}
+      body {
+        margin: 0;
+      }
 
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-}
-    .nav{
-      position: sticky;
-      top:0px;
-      background-color: black;
-      padding:10px;
-      overflow: hidden;
-      
-    }
-    .nav a{
+      /* Style the header */
+      .newheader {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+      }
+      .newnav {
+        position: sticky;
+        top: 0px;
+        background-color: black;
+        padding: 10px;
+        overflow: hidden;
+      }
+      .navlink {
         text-decoration: none;
-        float:left;
-        display:block;
+        float: left;
+        display: block;
         text-align: center;
         color: white;
-        padding : 10px 5px;
-    
-    }
-    .nav a:hover{
+        padding: 10px 5px;
+      }
+      .navlink:hover {
         background-color: red;
-        
-    }
-    
-    
-        * {
-  box-sizing: border-box;
-}
-  .content-size{
-   
-   height: 100vh;
-  }
-    .column{
-        float:left;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      .content-size {
+        height: 100vh;
+      }
+      .column {
+        float: left;
         width: 33.33%;
         height: 100%;
         border-right: 10px black solid;
         padding: 10px;
-    }
-    .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.chatbox{
-    position: fixed;
-  bottom: 0;
-  right: 0;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .chatbox {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
 
-}
-     
-    footer {      
-  margin: 10px 0px 0px 0px;
-  background-color: blue;
-  text-align: center;
-  padding: 10px;
-}
+      footer {
+        margin: 10px 0px 0px 0px;
+        background-color: blue;
+        text-align: center;
+        padding: 10px;
+      }
     </style>
-</head>
-<body>
-    <div class="header">
-        <h2>HEADER </h2>
+  </head>
+  <body>
+    <div class="newheader">
+      <h2>HEADER</h2>
     </div>
-            
-    <div class="nav">
-        <a href="">home</a>
-         <a href="">courses</a>
-         <a href="">about us</a>
-    
-    
-</div>
+
+    <div class="newnav">
+      <a class="navlink" href="/">home</a>
+      <a class="navlink" href="/">courses</a>
+      <a class="navlink" href="/">about us</a>
+    </div>
     <div class="content-size">
-    <div class="row">
+      <div class="row">
         <div class="column">
-                <h2>content1</h2>
+          <h2>content1</h2>
         </div>
         <div class="column">
-                <h2>content2</h2>
+          <h2>content2</h2>
         </div>
         <div class="column">
-         <h2>content3</h2>
+          <h2>content3</h2>
         </div>
-       
-    </div>
+      </div>
     </div>
     <div class="chatbox">
-        <button type="button">let's chat</button>
+      <button type="button">let's chat</button>
     </div>
     <div>
-    <footer>
+      <footer>
         <h2>FOOTER</h2>
-    </footer>
-
-</div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>

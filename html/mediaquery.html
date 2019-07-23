@@ -1,56 +1,36 @@
 <html>
-<head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .text {
+        padding: 20px;
+        color: white;
+      }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-.text {
+      @media only screen and (min-width: 768px) /*Medium devices (landscape tablets, 768px and up) */ {
+        .text {
+          background: green;
+        }
+      }
 
-  padding: 20px;
-  color: white;
-}
-@media only screen and (max-width:600px)/*extra small devices (phones, 600px and down)*/
-{
-    .text{
-        background:red;
-    }
-}
-@media only screen and (min-width:600px)/*Small devices (portrait tablets and large phones, 600px and up)*/
-{
-    .text{
-        background:blue;
-    }
-}
-@media only screen and (min-width:768px)/*Medium devices (landscape tablets, 768px and up)*/
-{
-    .text{
-        background:green;
-    }
-}
-@media only screen and (min-width:992px)/*Large devices (laptops/desktops, 992px and up) */
-{
-    .text{
-        background:black;
-    }
-}
-@media only screen and (min-width:1200px) /*Extra large devices (large laptops and desktops, 1200px and up)*/
-{
-    .text{
-        background:yellow;
-    }
-}
-</style>
-</head>
-<body>
-    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut erat ipsum. 
-        Integer scelerisque sagittis sapien, non malesuada dui posuere vel. Integer
-         enim nisi,
-         rutrum in eleifend quis, scelerisque non ipsum. Vestibulum ante 
-         ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc tincidunt nec 
-         odio vel rhoncus.
-          Donec consequat ligula non elementum tincidunt. Morbi sollicitudin lacus elit,
-           eu pulvinar lacus molestie nec.
-           Aenean rhoncus massa iaculis magna porta dictum. 
-        Nunc vehicula eu odio et facilisis. Suspendisse potenti. Phasellus id quam et sem accumsan rutrum. </p>
-
-</body>
+      @media only screen and (min-width: 1200px) /*Extra large devices (large laptops and desktops, 1200px and up) */ {
+        .text {
+          background: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut erat
+      ipsum. Integer scelerisque sagittis sapien, non malesuada dui posuere vel.
+      Integer enim nisi, rutrum in eleifend quis, scelerisque non ipsum.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+      cubilia Curae; Nunc tincidunt nec odio vel rhoncus. Donec consequat ligula
+      non elementum tincidunt. Morbi sollicitudin lacus elit, eu pulvinar lacus
+      molestie nec. Aenean rhoncus massa iaculis magna porta dictum. Nunc
+      vehicula eu odio et facilisis. Suspendisse potenti. Phasellus id quam et
+      sem accumsan rutrum.
+    </p>
+  </body>
 </html>

@@ -9,16 +9,13 @@
     <style>
       .container {
         background-color: red;
-
+        height: 100px;
         display: flex;
-
-        /*flex-direction: column-reverse;*/
-        /*flex-direction: row;*/
-        /* flex-direction: row-reverse;*/
-
-        /*flex-wrap: nowrap;*/
-        /*flex-wrap: wrap-reverse;*/
-        flex-flow: column wrap;
+        justify-content: center;
+        /*justify-content: flex-start;*/
+        /* justify-content: flex-end;*/
+        /*justify-content: space-around;*/
+        /*justify-content: space-between;*/
       }
       .container div {
         background-color: aqua;
@@ -32,14 +29,10 @@
   </head>
   <body>
     <div class="container">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>8</div>
+      <div><h1>1</h1></div>
+      <div><h2>2</h2></div>
+      <div><h4>3</h4></div>
+      <div><h3>4</h3></div>
     </div>
   </body>
 </html>
