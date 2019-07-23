@@ -1,0 +1,140 @@
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                width:100%;
+                height:100%;
+                margin-top:0;
+            }
+            .new{
+
+                background-color:rgba(0,0,0,0.8);
+                width:25%;
+                height:25%;
+                position: absolute;
+                bottom:0;
+                right:0;
+                z-index:10;
+                opacity: 0;
+                visibility: hidden;
+
+            }
+        .header{
+            position:absolute;
+
+           overflow: hidden;
+            width:100%;
+            height:auto;
+            background-color: darkkhaki;
+            border: 2px black solid;
+            padding: 10px;
+            
+        }
+        * {
+  box-sizing: border-box;
+}
+        .parent{
+         
+         position: relative;
+         width:auto;
+         height:500px;
+         background-color: cornflowerblue;
+         margin-top: 100px;
+
+        }
+        .container-1{
+            position: absolute;
+            top: 100px;
+           
+            border:2px yellow solid;
+            border-radius: 3px;
+            width: 75%;
+            height:auto;
+            margin: 10px;
+            background-color: darkgrey;
+            
+            
+        }
+        .container-2{
+            position: absolute;
+            top: 200px;
+            right:0;
+            border:2px yellow solid;
+            border-radius: 3px;
+            width: 75%;
+            height:auto;
+            margin: 10px;
+            background-color: darkslategray;
+               
+        }
+        .right{
+            padding:10px;
+        }
+        .container-3{
+            width:100%;
+            position:fixed;
+            left:75%;
+            bottom:0;
+            
+            
+        }
+        .inputbox{
+         width:15%;
+        }
+        .button{
+            width:10%;
+        }
+        #new:target{
+            opacity: 1;
+            visibility: visible;
+        }
+       #new:target .new{
+        opacity: 1;
+        visibility:visible;
+       }
+       .main-body{
+        position:fixed;
+        bottom:0;
+        right:0;
+       }
+        a{
+            
+            text-decoration: none;
+        }
+        .x{
+        display:block;
+        float:right;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="main-body">
+        <a href="#new">hey there</a>
+        </div>
+    <div class="new" id="new">
+        
+        <div class="header">
+            <h2>Chatbox</h2>
+            <div class="x"><a href="">&times;</a></div>
+            </div>
+        <div class="parent">
+        
+        <div class="container-1">
+         <p class="right">hey how are you ?</p>
+        
+        </div>
+        <div class="container-2">
+            <p class="right">hey, I am fine.What about you? </p>
+        </div>
+        
+        <div class="container-3">
+            <input class="inputbox" type="text" placeholder="Enter the text message"><button type="button" class="button">Send</button>
+            
+        </div>
+    </div>
+    </div>
+    
+
+    </body>
+</html>

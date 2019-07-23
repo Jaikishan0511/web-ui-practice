@@ -1,29 +1,25 @@
 <html>
 <head>
     <style>
-        body{
-            margin:0;
-        }
-        .div1{
-        position: relative;
-    }
-    .div1 header{
-        position: fixed;
-        top:0;
-  
-        width: auto;
-        overflow: hidden;
-        background-color: blue;
-        
-        text-align: center;
-    }
-    nav{
+       body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+    .nav{
+      position: sticky;
+      top:0px;
       background-color: black;
-     padding:10px;
+      padding:10px;
       overflow: hidden;
       
     }
-    nav a{
+    .nav a{
         text-decoration: none;
         float:left;
         display:block;
@@ -32,7 +28,7 @@
         padding : 10px 5px;
     
     }
-    nav a:hover{
+    .nav a:hover{
         background-color: red;
         
     }
@@ -57,6 +53,12 @@
   display: table;
   clear: both;
 }
+.chatbox{
+    position: fixed;
+  bottom: 0;
+  right: 0;
+
+}
      
     footer {      
   margin: 10px 0px 0px 0px;
@@ -67,15 +69,16 @@
     </style>
 </head>
 <body>
-    <div>
-    <header>
+    <div class="header">
+        <h2>HEADER </h2>
+    </div>
             
-    <nav>
+    <div class="nav">
         <a href="">home</a>
          <a href="">courses</a>
          <a href="">about us</a>
-    </nav>
-    </header>
+    
+    
 </div>
     <div class="content-size">
     <div class="row">
@@ -90,6 +93,9 @@
         </div>
        
     </div>
+    </div>
+    <div class="chatbox">
+        <button type="button">let's chat</button>
     </div>
     <div>
     <footer>
