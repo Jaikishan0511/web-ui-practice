@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <div id="text1">loading...</div>
+      <div id="text2">api not called</div>
+    </div>
+    <script>
+      axios
+        .get("http://my-json-server.typicode.com/typicode/demo/posts")
+        .then(response => {
+          let output = "";
+          response.data.forEach(function(todo, id) {
+            output += `
+            <ul>
+                <li>ID: ${todo.id}</li>
+                <li>Title: ${todo.title}</li>  
+            </ul>
+            <div id="demo-${id}" >
+            <button id="gone-${id}" type="button" onclick= "fetchcomment(${id})">SHOW COMMENTS</button>
+            </div>
+            `;
+          });
+          document.getElementById("text1").innerHTML = output;
+          return output;
+        })
+        .catch(err => console.log("Something went wrong: ", err))
+        .finally(() => {
+          document.getElementById("text2").innerHTML = "api  called";
+        });
+      function fetchcomment(id) {
+        document.getElementById(`gone-${id}`).style.visibility = "hidden";
+        axios
+          .get("https://my-json-server.typicode.com/typicode/demo/comments")
+          .then(response => {
+            let co = "";
+            response.data.forEach(function(tocomment) {
+              co += `
+            <ul>
+                <li> ${tocomment.id}</li>
+                <li> ${tocomment.body}</li>
+                <li> ${tocomment.postId}</li>   
+            </ul>
+            `;
+            });
+            document.getElementById(`demo-${id}`).innerHTML = co;
+            return co;
+          });
+      }
+    </script>
+  </body>
+</html>
